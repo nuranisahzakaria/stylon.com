@@ -23,7 +23,7 @@
 		<ul>
 			<div class="container">
 			
-			<li><a href="keluar.php">Keluar</a></li>
+			<li><a href="keluar.php" onClick="return confirm('Keluar dari Halaman Admin')">Keluar</a></li>
 			<li><a href="data-produk.php">Data Produk</a></li>
 			<li><a href="data-kategori.php">Data Kategori</a></li>
 			<li><a href="profil.php">Profil</a></li>

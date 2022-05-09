@@ -65,11 +65,11 @@
         <!----------------------------IMAGE SLIDER ------------------------------>
         <div id="slider">
             <figure>
-                <img src="img/image-slider2.jpeg" style="width: 20%; height: 500px;">
-                <img src="img/image-slider3.jpeg" style="width: 20%; height: 500px;">
-                <img src="img/image-slider4.jpeg" style="width: 20%; height: 500px;">
-                <img src="img/image-slider5.jpg" style="width: 20%; height: 500px;">
-                <img src="img/image-slider6.jpg" style="width: 20%; height: 500px;">
+                <img src="img/image-slide2.jpg" style="width: 20%; height: 500px;">
+                <img src="img/image-slide3.jpg" style="width: 20%; height: 500px;">
+                <img src="img/image-slide4.jpg" style="width: 20%; height: 500px;">
+                <img src="img/image-slide5.jpg" style="width: 20%; height: 500px;">
+                <img src="img/image-slide6.jpg" style="width: 20%; height: 500px;">
             </figure>
         </div>
 

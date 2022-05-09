@@ -4,6 +4,7 @@
 	if($_SESSION['status_login'] != true){
 		echo '<script>window.location="login.php"</script>';
 	}
+	$produk = mysqli_query($conn, "SELECT * FROM dp_product LEFT JOIN db_category USING (category_id) ORDER BY product_id DESC");
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +23,7 @@
 		<ul>
 			<div class="container">
 			
-			<li><a href="keluar.php">Keluar</a></li>
+			<li><a href="keluar.php" onClick="return confirm('Keluar dari Halaman Admin')">Keluar</a></li>
 			<li><a href="data-produk.php">Data Produk</a></li>
 			<li><a href="data-kategori.php">Data Kategori</a></li>
 			<li><a href="profil.php">Profil</a></li>
@@ -35,12 +36,14 @@
 		<div class="section">
 			<div class="container">
 				<h3 class="judul1">Data Produk</h3>
+				<a href="tambah-produk.php">
 				<div class="box">
 					<p>
 						<div class="buton-tambah">
-							<a href="tambah-produk.php">Tambah Produk</a>
+							Tambah Produk
 						</div>
 					</p>
+					</a>
 					<table border="1" cellspacing="0" class="table">
 						<thead>
 						<tr>
@@ -56,7 +59,7 @@
 						<tbody>
 							<?php 
 								$no = 1;
-								$produk = mysqli_query($conn, "SELECT * FROM dp_product LEFT JOIN db_category USING (category_id) ORDER BY product_id DESC");
+								
 								if(mysqli_num_rows($produk) > 0){
 								while ($row = mysqli_fetch_array($produk)){
 							?>
